@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body .btn {
+  border: 2px solid #ffe81f;
+  border-radius: 8px;
+}
+
+body .headline {
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: "6rem";
+  opacity: 0.9;
+}
+
+.card {
+  position: relative;
+  background-image: url("./assets/images/star-wars.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .card-header {
+  background-color: #ffe81f;
+  z-index: 1;
+}
+
+.card .card-body {
+  z-index: 1;
+}
+
+.card .mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.card .me {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+  font-size: .4rem;
+  color:#fff;
+}
