@@ -48,7 +48,7 @@ const CharactersPage = () => {
     </div>
     <div className="d-flex justify-content-center align-items-center mb-2 fixed-bottom">
       <button className="btn btn-sm bg-dark text-light mx-2" onClick={handlePreviousPage} disabled={previous==null}>Previous Page</button>
-      <button className="btn btn-sm bg-dark text-light mx-2" onClick={handleNextPage} disabled={next==null} >Next page</button>
+      <button className="btn btn-sm bg-dark text-light mx-2" onClick={handleNextPage} disabled={next==null} >Next Page</button>
     </div>
     </div>
   )
