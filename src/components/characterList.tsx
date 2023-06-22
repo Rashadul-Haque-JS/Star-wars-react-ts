@@ -41,10 +41,10 @@ const CharactersPage = () => {
     <div className="col-md-12">
       <div className="col-md-12 row h-100 mt-4 pb-5">
         <h1 className="h6 text-center mb-2  headline">CHARACTERS</h1>
-       
-        {chars.map((char:Character, index:number)=> <StarCharacter {...char} key={index}/>)}
-        {/* {chars.map((char:Character, index:number)=> <StarCharacter character={char} key={index}/>)} For alternative // or {character}:{character:Character} as props*/} 
-       
+       {chars.length === 0 && <div className="d-flex justify-content-center align-items-center h-100">
+        Loading...
+      </div>}
+        {chars.map((char:Character, index:number)=> <StarCharacter {...char} key={index}/>)}       
     </div>
     <div className="d-flex justify-content-center align-items-center mb-2 fixed-bottom">
       <button className="btn btn-sm bg-dark text-light mx-2" onClick={handlePreviousPage} disabled={previous==null}>Previous Page</button>
